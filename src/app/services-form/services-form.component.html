@@ -1,0 +1,28 @@
+<div class="container">
+  <form #f="ngForm">
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Value A</label>
+      <div class="col-4">
+        <input type="text" value="" name="valueA" class="form-control" ngModel />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Value B</label>
+      <div class="col-4">
+        <input type="text" value="" name="valueB" class="form-control"  ngModel/>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <input type="button" value="ADD" (click)="onAdd(f.value)" class="btn btn-info d-inline-block m-2" />
+      <input type="button" value="SUB" (click)="onSubstract(f.value)" class="btn btn-info d-inline-block m-2"/>
+      <input type="button" value="MULTIPLY" (click)="onMultiply(f.value)"  class="btn btn-info d-inline-block m-2"/> -->
+      <input type="button" value="Submit" (click)="onSubmit(f.value)" class="btn btn-info" />
+    </div>
+  </form>
+  <div>
+    <p>Add Value is {{addResult}}</p>
+    <p>Substract Value is {{substractResult}}</p>
+    <p>Multiply Value is {{multiplyResult}}</p>
+  </div>
+  <!-- <pre>{{f.value | json}}</pre> -->
+</div>
